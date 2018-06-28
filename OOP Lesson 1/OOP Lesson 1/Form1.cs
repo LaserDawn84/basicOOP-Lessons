@@ -25,6 +25,21 @@ namespace OOP_Lesson_1
         private void button1_Click(object sender, EventArgs e)
         {
             farm.LoadFarm();
+            textBox1.Text = "Hey You're At Ol' Mac Donald's";
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            farm.FeedAnimals();
+        }
+
+        //public void AppendText(String text)
+        //{
+           // if (this.InvokeRequired)
+           // {
+           //     this.Invoke(new Action<string>(AppendText), new Object[] { text });
+           // }   
+           // this.textBox1.Text += text;
+        //}
     }
 }

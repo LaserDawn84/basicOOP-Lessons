@@ -8,6 +8,7 @@ namespace OOP_Lesson_1
 {
     public class Animal
     {
+        protected float hunger = 100f;
         public Animal()
         {
             Console.WriteLine("New Animal");
@@ -15,6 +16,10 @@ namespace OOP_Lesson_1
         public virtual void MakeNoise(String noise, String animalType)
         {
             Console.WriteLine(animalType + " goes " + noise);
+        }
+        public virtual void FeedMe(String animalType, float food)
+        {
+            Console.WriteLine("Fed The " + animalType + food + " Snax");
         }
     }
 }
